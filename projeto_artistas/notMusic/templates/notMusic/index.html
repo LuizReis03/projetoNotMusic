@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista de Artistas</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'notMusic/css/index.css' %}">
+    </head>
+    <body>
+        
+        <main>
+
+            <header>
+                <!-- <img src="{% static 'notMusic/img/logo.png' %}"> -->
+                <p class="logo">notMusic</p>
+            </header>
+
+            <section class="sec-main">
+                <h2 class="titulo-sec">Artistas</h2>
+                    {% if lista_de_artistas %}
+                        {% for a in lista_de_artistas %}
+                            <ul>
+                                <li>
+                                    <div class="controla">
+                                        <img class="fotoArtista" src="{{a.fotoArtista}}" alt="">
+                                        <h4 class="nome-artista">{{a.nomeArtista}}</h4>
+                                    </div>
+                                    <a class="link-albuns" href="{% url 'notMusic:albuns' a.id %}">Ver albuns</a>
+                                </li>
+                            </ul>
+                        {% endfor %}
+                    {% else %}
+                        <p>Não há artistas cadastrados.</p>
+                    {% endif %}
+            </section>
+
+        </main>
+    </body>
+</html>

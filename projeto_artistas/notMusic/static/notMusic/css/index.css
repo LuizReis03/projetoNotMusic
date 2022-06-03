@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    display: flex;
+}
+
+header{
+    background-color: #0f0f0f;
+    padding: 1.2% 0%;
+    width: 30%;
+    height: 100%;
+}
+
+.logo{
+    margin-bottom: 850px;
+    color: white;
+    margin-left: 3%;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.logo::after{
+    content: "";
+    width: 25%;
+    height: 1px;
+    display: block;
+    background-color: #ffffff;
+    margin-left: 2%;
+}
+
+.sec-main{
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(#242424, #111111);
+}
+
+.titulo-sec{
+    color: #ffffff;
+    margin-top: 5%;
+    font-size: 2vw;
+    margin-left: 5%;
+}
+
+.card-artista{
+    width: 10%;
+}
+
+.controla{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.fotoArtista{
+    width: 20%;
+    margin-right: 3%;
+}
+
+ul{
+    margin-left: 5%;
+    border-bottom: #4e4e4e solid 1px;
+    display: flex;
+    width: 80%;
+    padding: 0% 0.2%;
+}
+/* 
+#5ea0cc */
+
+li{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nome-artista{
+    font-size: 1.1vw;
+    color: white;
+}
+
+.link-albuns{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.link-albuns:hover{
+    color: #8a8a8a;
+}
+
+/*ALBUM*/
+.titulo-main-album{
+    color: #ffffff;
+    position:static;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0;
+}
+
+.sec-album{
+    width: 91%;
+    max-width: 91%;
+    padding: 3.5%;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(#242424, #111111);
+    justify-content: flex-start;
+}
+
+.titulo-album{
+    color: white;
+    font-size: 0.9vw;
+}
+
+.card-album{
+    display: block;
+    width: 25%;
+    max-width: 30%;
+    text-align: center;
+    align-items: center;
+    height: 30%;
+    margin-top: 0;
+}
+
+.link-album{
+    width: 65%;
+}
+
+.img-album{
+    width: 65%;
+    transition: 0.3s;
+}
+
+.img-album:hover{
+    box-shadow: 0px 8px 16px 0px #000000c0 !important;
+}
+
+/* MUSICA */
+.duracao{
+    font-size: 0.9vw;
+    color: white;
+    margin-left: 5%;
+}
