@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(31, 31, 31);
+}
+
+main{
+    display: flex;
+}
+
+header{
+    background-color: rgb(69, 196, 179);
+    padding: 1.2% 0%;
+    width: 30%;
+    height: 100%;
+}
+
+.logo{
+    margin-bottom: 100%;
+}
+
+.sec-main{
+    width: 100%;
+    max-width: 100%;
+}
+
+.titulo-sec{
+    color: white;
+    margin-top: 5%;
+    font-size: 2vw;
+    margin-left: 2%;
+}
+
+.card-artista{
+    width: 10%;
+}
+
+ul{
+    background: rgb(119, 119, 119);
+}
+
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nome-artista{
+    font-size: 1.1vw;
+}
+
+.link-albuns{
+    text-decoration: none;
+    color: white;
+    margin-left: 50%;
+}
+
+.link-albuns:hover{
+    color: #8a8a8a;
+}

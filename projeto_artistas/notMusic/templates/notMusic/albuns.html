@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'notMusic/css/index.css' %}">
+    <title>Albuns</title>
+</head>
+<body>
+    <main>
+
+        <header>
+            <p class="logo">notMusic</p>
+            <div class="nav-header">
+                <a class="link-header" href="{% url 'notMusic:index' %}">Home</a>
+                <p><a class="link-header" href="{% url 'notMusic:todosAlbuns' %}">Álbuns</a></p>
+                <a class="link-header" href="#">Músicas</a>
+            </div>
+            <p class="cop">© 2010 - 2022 NOTMUSIC</p>
+        </header>
+
+        <section class="sec-album">
+            {% for m in artista.albuns.all %}
+            <div class="card-album">
+                <a class="link-album" href="{% url 'notMusic:musicas' m.id %}">
+                    <img class="img-album" src="{{m.linkImg}}">
+                </a>
+                <h3 class="titulo-album">{{m.nomeAlbum}}</h3>
+            </div>
+            {% endfor %}
+        </section>
+
+    </main>
+</body>
+</html>
